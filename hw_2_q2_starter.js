@@ -74,6 +74,30 @@ files
         console.log("Total segments analyzed:", insideArr.length)
     // console.log("trues:", trues)
     // console.log("insideArr.length:", insideArr.length)
+
+    const xValues = Array.from({ length: insideArr.length }, (_, i) => i + 1);
+    const yValues = insideArr.map(val => val ? 1 : 0);
+
+    const plotData = [
+      {
+        x: xValues, // x-axis representing segments
+        y: yValues, // y-axis representing homophonic (1) or not (0)
+        type: 'scatter',
+        mode: 'markers',
+        marker: { color: 'blue' },
+      },
+    ];
+
+      const layout = {
+        title: 'Homophonic Segments',
+        xaxis: { title: 'Segment Index' },
+        yaxis: { title: 'Homophonic (1) / Not Homophonic (0)' },
+      };
+
+      plotlib.plot(plotData, layout);
+
+      const outputFileName = path.join(mainPath["outDir"], `${fid}_${mainPath["outFileName"]}.txt`);
+      fs.writeFileSync(outputFileName, JSON.stringify(insideArr));
   }
   catch (e) {
     console.log(e)
