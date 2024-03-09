@@ -1,11 +1,25 @@
-# mmi-mus-ai-nodejs
-Node.js and MATLAB code solutions for MMI Music + AI
+# MMI Music + AI Node.js Solutions
 
-HW2 - Using MATLAB to iterate through a directory of audio files, extract a value from the STFT
-magnitude, and write those values to a file.
-    - Using Node.js to add to a starter code to measure the homophony of a music piece from a midi file.
+This repository contains Node.js and MATLAB code solutions for MMI Music + AI assignments.
 
-HW5 - Using the FastPeakFind algorithm to find peaks (2D pick peaking) towards music identification similar to Shazam.
-    - Chordal analysis using the HarmAn algorithm in Node.js
+## Homework 2
 
-HW6 - Building Shazam in MATLAB -> Writing a function to calculate fingerprints in an audio file from a given directory of audio files.
+### MATLAB Solution
+- Iterate through a directory of audio files.
+- Extract a value from the Short-Time Fourier Transform (STFT) magnitude.
+- Write these values to a file.
+
+### Node.js Solution
+- Add to the starter code to measure the homophony of a music piece from a MIDI file.
+
+## Homework 5
+
+- Utilize the FastPeakFind algorithm for 2D peak peaking.
+- Apply the algorithm for music identification, towards building Shazam.
+- Conduct chordal analysis using the HarmAn algorithm in Node.js.
+
+## Homework 6
+
+- Building a Shazam-style fingerprint function in MATLAB.
+- Write a function to calculate fingerprints in an audio file.
+
