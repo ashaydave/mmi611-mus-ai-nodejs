@@ -14,12 +14,12 @@ This repository contains Node.js and MATLAB code solutions for MMI Music + AI as
 
 ## Homework 5
 
-- Utilize the FastPeakFind algorithm for 2D peak peaking.
-- Apply the algorithm for music identification, towards building Shazam.
-- Conduct chordal analysis using the HarmAn algorithm in Node.js.
+- FastPeakFind algorithm for 2D peak peaking.
+- Algorithm for music identification, towards building Shazam.
+- Chordal analysis using the HarmAn algorithm in Node.js.
 
 ## Homework 6
 
 - Building a Shazam-style fingerprint function in MATLAB.
-- Write a function to calculate fingerprints in an audio file.
+- A function to calculate fingerprints in an audio file.
 
